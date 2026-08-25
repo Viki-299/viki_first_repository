@@ -22,8 +22,20 @@ int main(){
     int c(6);
     int d{7};
     int e = {8};
-
+     
+    std::cout << (c - d) << std::endl;
+    if (c < d){
+        std::cout << c   << "less than" << d   << std::endl;
+    }  else if (c > d){
+            std::cout << c << "Bigger than" << d << std::endl;
+        }
+    
     std::cout << c << d << e << "\n";
+    bool sth{true};
+    std::cout << sth << std::endl; //1
+
+
+    
     
     return 0;
 }
