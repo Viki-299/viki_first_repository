@@ -46,9 +46,10 @@ int main(){
         std::cout << "Zero" << std::endl;
     }
     //second little programm
+    for (int i = 1; i <= 100; ++i){
+        std::cout << i << std::endl;
+    }
     
-    
-    
-    
+
     return 0;
 }
