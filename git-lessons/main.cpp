@@ -33,8 +33,21 @@ int main(){
     std::cout << c << d << e << "\n";
     bool sth{true};
     std::cout << sth << std::endl; //1
-
-
+    
+    //first little programm
+    int x;
+    std::cout << "Write your number" << "\n";
+    std::cin >> x;
+    if (x > 0){
+        std::cout << "Positive" << std::endl;
+    } else if (x < 0){
+        std::cout << "Negative" << std::endl;
+    } else if (x == 0){
+        std::cout << "Zero" << std::endl;
+    }
+    //second little programm
+    
+    
     
     
     return 0;
