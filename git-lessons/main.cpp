@@ -1,6 +1,23 @@
 #include <iostream>
 
+int max_element(int arr[], int size){
+    int max_dig{0};
+    for (int i = 0; i < size; i++){
+        if (arr[i] > max_dig){
+            max_dig = arr[i];
+        }
+    } return max_dig;
+}
+
 int main(){
+
+    int data[] = {3,7,1,4,9};
+    int result = max_element(data, 5);
+    std::cout << result << std::endl;
+
+
+
+
     std::cout << "HEllo World" << std::endl;
     std::cout << "Hello World2\n";
     std::cout << sizeof(int); //4
@@ -18,6 +35,9 @@ int main(){
 
     std::cout << "-a = " << (-a) << "(Unary Minus)\n";
     std::cout << "+a = " << (+a) << "(Unary Plus)\n";
+
+    
+
 
     int c(6);
     int d{7};
