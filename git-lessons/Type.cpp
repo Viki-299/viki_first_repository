@@ -1,30 +1,13 @@
 # include <iostream>
-
-class Pair{
-        public:
-            Pair(int a, int b) : first(a), second(b){}
-        private:
-            int first;
-            int second;
-    };
-
-struct Point {
-        int x;
-        int y;
-    };
-
+class Rectangle{
+    public:
+    Rectangle(double w, double h):width(w),height(h){}
+    double width;
+    double height;
+    double area() const {return width * height;}
+}; 
 int main(){
-    
-    Point p;
-    p.x = 10;
-    p.y = 5;
- 
-    Pair a(10, 20);
-
+    Rectangle MyRect(5.0,8.0);
+    std::cout << "Area " << MyRect.area() << std::endl;
     return 0;
-    
-
-
-
-
 }
